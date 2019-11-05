@@ -2,10 +2,12 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <div id="wrapper">
-      <HelloWorld msg="Welcome to Your Vue.js App"/>
+      <HelloWorld style="color:white;" msg="Welcome to Your Vue.js App"/>
       <Nav/>
       <div id="main">
         <HelloWorld msg="Welcome to Your Vue.js App"/>
+        <HelloWorld msg="Welcome to Your Vue.js App"/>
+
       </div>
     </div>
   </div>
@@ -36,16 +38,19 @@ export default {
 }
 body {
   background: #11998e;
-  background-image: url(assets/bg.jpg), linear-gradient(45deg, #11998e 15%, #38ef7d 85%);
+  background-image: url(assets/bg.jpg), linear-gradient(45deg, #38ef7d 15%, #11998e 85%);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+  font-size: 17pt;
 }
 #wrapper {
   width: 64em;
   max-width: calc(100% - 4em);
   margin: 0 auto;
 }
+
+
 
 a {
   transition: color 0.2s ease, border-bottom 0.2s ease;
@@ -65,5 +70,30 @@ a {
 }
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+
+@media screen and (max-width: 1680px) {
+
+  body, input, select, textarea {
+    font-size: 14pt;
+  }
+
+}
+
+@media screen and (max-width: 1280px) {
+
+  body, input, select, textarea {
+    font-size: 12pt;
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+
+  body, input, select, textarea {
+    font-size: 11pt;
+  }
+
 }
 </style>
