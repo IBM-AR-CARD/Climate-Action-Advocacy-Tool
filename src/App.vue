@@ -1,17 +1,23 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div id="wrapper">
+      <HelloWorld msg="Welcome to Your Vue.js App"/>
+      <Nav/>
+    </div>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import Nav from './components/Nav.vue'
+
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    HelloWorld,
+    Nav
   }
 }
 </script>
@@ -31,5 +37,17 @@ body {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+#wrapper {
+  width: 64em;
+  max-width: calc(100% - 4em);
+  margin: 0 auto;
+}
+
+a {
+  transition: color 0.2s ease, border-bottom 0.2s ease;
+  text-decoration: none;
+  border-bottom: dotted 1px;
+  color: inherit;
 }
 </style>
