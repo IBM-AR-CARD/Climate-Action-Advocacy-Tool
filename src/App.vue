@@ -25,4 +25,11 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+body {
+  background: #11998e;
+  background-image: url(assets/bg.jpg), linear-gradient(45deg, #11998e 15%, #38ef7d 85%);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 </style>
