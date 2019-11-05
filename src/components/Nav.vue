@@ -18,7 +18,6 @@
 <style scoped>
     #nav {
         transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
-        background-color: #ffffff;
         color: #636363;
         position: absolute;
         width: 64em;
@@ -30,6 +29,7 @@
         cursor: default;
         text-align: center;
         display: block;
+        box-sizing: border-box;
     }
 
     #nav ul {

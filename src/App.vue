@@ -4,6 +4,9 @@
     <div id="wrapper">
       <HelloWorld msg="Welcome to Your Vue.js App"/>
       <Nav/>
+      <div id="main">
+        <HelloWorld msg="Welcome to Your Vue.js App"/>
+      </div>
     </div>
   </div>
 </template>
@@ -49,5 +52,18 @@ a {
   text-decoration: none;
   border-bottom: dotted 1px;
   color: inherit;
+}
+
+#nav + #main {
+  padding-top: 4.25em;
+}
+
+#main {
+  background-color: #ffffff;
+  color: #636363;
+  border-radius: 0.25em;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 </style>
