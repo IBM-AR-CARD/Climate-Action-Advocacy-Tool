@@ -2,13 +2,21 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <div id="wrapper">
+
       <HelloWorld style="color:white;" msg="Welcome to Your Vue.js App"/>
+
       <Nav/>
+
       <div id="main">
         <HelloWorld msg="Welcome to Your Vue.js App"/>
         <HelloWorld msg="Welcome to Your Vue.js App"/>
 
       </div>
+
+      <footer id="footer">
+        <p class="copyright">© Climate Advocacy Toolkit. Design: <a href="https://github.com/IBM-AR-CARD">Team 13</a>.</p>
+      </footer>
+
     </div>
   </div>
 </template>
@@ -95,5 +103,17 @@ a {
     font-size: 11pt;
   }
 
+}
+
+#footer {
+  padding: 5em 5em 3em 5em;
+  color:white;
+}
+
+#footer .copyright {
+  width: 100%;
+  margin: 2.5em 0 2em 0;
+  font-size: 0.8em;
+  text-align: center;
 }
 </style>
