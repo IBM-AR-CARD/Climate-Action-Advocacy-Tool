@@ -8,17 +8,15 @@
       <Nav/>
 
       <div id="main">
-        <HelloWorld msg="Welcome to Your Vue.js App"/>
-        <HelloWorld msg="Welcome to Your Vue.js App"/>
-
+        <router-view></router-view>
       </div>
 
       <footer id="footer">
-        <p class="copyright">© Climate Advocacy Toolkit. Design: <a href="https://github.com/IBM-AR-CARD">Team 13</a>.</p>
-      </footer>
+  <p class="copyright">© Climate Advocacy Toolkit. Design: <a href="https://github.com/IBM-AR-CARD">Team 13</a>.</p>
+</footer>
 
-    </div>
-  </div>
+</div>
+</div>
 </template>
 
 <script>
